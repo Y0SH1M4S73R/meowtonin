@@ -10,8 +10,6 @@ fn main() {
 		.header("bindings/wrapper.hpp")
 		.dynamic_library_name("ByondApi")
 		.dynamic_link_require_all(true)
-		.allowlist_item("C?Byond.*")
-		.allowlist_item("[su][1-9].*")
 		.override_abi(Abi::CUnwind, "Byond.*")
 		.generate_block(true)
 		.derive_default(true)
